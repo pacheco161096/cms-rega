@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "traslate_copies",
+  "info": {
+    "singularName": "traslate-copy",
+    "pluralName": "traslate-copies",
+    "displayName": "traslateCopy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "copyId": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "text": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

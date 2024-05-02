@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "caracteristicas",
+  "info": {
+    "singularName": "caracteristica",
+    "pluralName": "caracteristicas",
+    "displayName": "caracteristica",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "caracteristica": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "paquetes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::paquete.paquete",
+      "inversedBy": "caracteristicas"
+    }
+  }
+}
